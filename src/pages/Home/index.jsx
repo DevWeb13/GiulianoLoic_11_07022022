@@ -1,5 +1,13 @@
+import Thumb from '../../components/Thumb'
+
 function Home() {
-    return <div>Page d'accueil</div>;
+  /* const Home = () => {} */
+  return (
+    <div className="home">
+      <h1>Page d'accueil</h1>
+      <Thumb />
+    </div>
+  )
 }
 
-export default Home;
+export default Home
