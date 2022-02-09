@@ -1,11 +1,21 @@
-import { Link } from 'react-router-dom'
+import { NavLink } from 'react-router-dom'
 
 function Header() {
+ 
   return (
-    <nav className="headerNav">
-      <Link to="/">Accueil</Link>
-      <Link to="/a-propos">À Propos</Link>
-    </nav>
+    <header>
+      <div className="logo">
+        <img src="./img/logo.png" alt="logo" />
+      </div>
+      <nav>
+        <NavLink exact to="/" activeClassName="nav-active">
+          Accueil
+        </NavLink>
+        <NavLink to="/a-propos" activeClassName="nav-active">
+          À Propos
+        </NavLink>
+      </nav>
+    </header>
   )
 }
 

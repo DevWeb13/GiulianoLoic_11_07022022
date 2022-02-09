@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+$font-1: 'Montserrat', sans-serif;
+
+$color-1: #ff6060;
+
+$desktopMinWidth: 992px;
+@mixin desktop {
+  @media screen and (min-width: $desktopMinWidth) {
+    @content;
+  }
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: $font-1;
+  color: $color-1;
+  margin: 20px auto;
+  padding: 0 20px;
+  max-width: 375px;
+  @include desktop {
+    max-width: 1440px;
+    margin: 40px auto;
+    padding: 0 100px;
+  }
+}
+li {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+  color: $color-1;
+  cursor: pointer;
+}
