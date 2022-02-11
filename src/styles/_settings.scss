@@ -4,7 +4,7 @@ $font-1: 'Montserrat', sans-serif;
 
 $color-1: #ff6060;
 
-$desktopMinWidth: 992px;
+$desktopMinWidth: 62rem;
 @mixin desktop {
   @media screen and (min-width: $desktopMinWidth) {
     @content;
@@ -19,13 +19,13 @@ $desktopMinWidth: 992px;
 body {
   font-family: $font-1;
   color: $color-1;
-  margin: 20px auto;
-  padding: 0 20px;
-  max-width: 375px;
+  margin: 1.25rem auto;
+  padding: 0 1.25rem;
+  max-width: 23.4375rem;
   @include desktop {
-    max-width: 1440px;
-    margin: 40px auto;
-    padding: 0 100px;
+    max-width: 90rem;
+    margin: 2.5rem auto;
+    padding: 0 6.25rem;
   }
 }
 li {

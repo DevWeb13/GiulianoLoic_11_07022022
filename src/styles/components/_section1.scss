@@ -1,0 +1,36 @@
+.section1 {
+  background: rgba(0, 0, 0, 0.3) url('../../../public/img/section1Mobile.png')
+    center/cover;
+  background-blend-mode: darken;
+  height: 6.9375rem;
+  border-radius: 0.625rem;
+  margin: 1rem 0 0.125rem 0;
+  display: flex;
+  align-items: center;
+  color: white;
+
+  @include desktop {
+    background: rgba(0, 0, 0, 0.3)
+      url('../../../public/img/section1Desktop.png') center/cover;
+    height: 13.9375rem;
+    border-radius: 1.5625rem;
+    margin-top: 3.9375rem;
+  }
+  h1 {
+    font-weight: 500;
+  }
+  .h1Mobile {
+    margin-left: 1rem;
+    @include desktop {
+      display: none;
+    }
+  }
+  .h1Desktop {
+    display: none;
+    @include desktop {
+      display: block;
+      font-size: 3rem;
+      margin-left: 17.25rem;
+    }
+  }
+}
