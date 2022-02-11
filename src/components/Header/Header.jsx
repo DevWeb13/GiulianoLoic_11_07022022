@@ -1,7 +1,6 @@
 import { NavLink } from 'react-router-dom'
 
 function Header() {
- 
   return (
     <header>
       <div className="logo">

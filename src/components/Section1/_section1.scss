@@ -7,6 +7,7 @@
   margin: 1rem 0 0.125rem 0;
   display: flex;
   align-items: center;
+  justify-content: center;
   color: white;
 
   @include desktop {
@@ -18,19 +19,10 @@
   }
   h1 {
     font-weight: 500;
-  }
-  .h1Mobile {
     margin-left: 1rem;
     @include desktop {
-      display: none;
-    }
-  }
-  .h1Desktop {
-    display: none;
-    @include desktop {
-      display: block;
       font-size: 3rem;
-      margin-left: 17.25rem;
+      margin-left: 0;
     }
   }
 }
