@@ -1,0 +1,35 @@
+.card {
+  height: 255px;
+  width: 335px;
+  margin: 10px auto;
+  border-radius: 10px;
+  overflow: hidden;
+  display: flex;
+  position: relative;
+  align-items: flex-end;
+
+  &:hover {
+    img {
+      filter: brightness(100%);
+    }
+    h2 {
+      font-weight: bold;
+    }
+  }
+
+  img {
+    filter: brightness(75%);
+    transition: filter 0.3s;
+  }
+
+  h2 {
+    position: absolute;
+    font-size: 18px;
+    color: #fff;
+    margin-bottom: 15px;
+    margin-left: 19px;
+    width: 50%;
+    font-weight: 500;
+    transition: font-weight color 0.3s;
+  }
+}

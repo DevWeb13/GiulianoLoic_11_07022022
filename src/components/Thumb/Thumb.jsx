@@ -1,11 +1,20 @@
-import { Link } from 'react-router-dom'
+import React, { useState, useEffect } from 'react'
 import { getAllHousing } from '../../services/dataManager'
+import Card from '../Card/Card'
 
 function Thumb() {
+  const [housingData, setHousingData] = useState([])
+
+  useEffect(() => {
+    setHousingData(getAllHousing())
+  }, [])
+
   return (
-    <nav>
-      <Link to="/fiche-logement/1">Fiche</Link>
-    </nav>
+    <section className="thumb">
+      {housingData.map((housing) => (
+        <Card key={housing.id} housing={housing} />
+      ))}
+    </section>
   )
 }
 

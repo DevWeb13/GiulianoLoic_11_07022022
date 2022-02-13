@@ -14,18 +14,13 @@ ReactDOM.render(
     <BrowserRouter>
       <Header />
       <Routes>
-        <Route path="/">
-          <Home />
-        </Route>
-        <Route path="/fiche-logement/:housingId">
-          <HousingSheet />
-        </Route>
-        <Route path="/a-propos">
-          <About />
-        </Route>
-        <Route>
-          <Error />
-        </Route>
+        <Route path="/" element={<Home />}></Route>
+        <Route
+          path="/fiche-logement/:housingId"
+          element={<HousingSheet />}
+        ></Route>
+        <Route path="/a-propos" element={<About />}></Route>
+        <Route path="*" element={<Error />}></Route>
       </Routes>
     </BrowserRouter>
   </React.StrictMode>,
