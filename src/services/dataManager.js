@@ -1,22 +1,22 @@
 import datas from '../datas/housing.json'
 
 function getAllHousing() {
-  const answer = []
+  const AllHousing = []
   datas.forEach((house) => {
-    answer.push({
+    AllHousing.push({
       id: house.id,
       title: house.title,
       cover: house.cover,
     })
   })
-  return answer
+  return AllHousing
 }
 
 function getHousing(id) {
-  const housingData = []
+  let housingData = {}
   datas.forEach((house) => {
     if (house.id === id) {
-      housingData.push(house)
+      housingData = house
     }
   })
   return housingData
