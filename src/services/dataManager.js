@@ -12,6 +12,14 @@ function getAllHousing() {
   return answer
 }
 
-function getHousing(id) {}
+function getHousing(id) {
+  const housingData = []
+  datas.forEach((house) => {
+    if (house.id === id) {
+      housingData.push(house)
+    }
+  })
+  return housingData
+}
 
 export { getAllHousing, getHousing }

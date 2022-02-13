@@ -1,4 +1,10 @@
 .thumb {
   display: flex;
   flex-wrap: wrap;
+  @include desktop {
+    background-color: $color-2;
+    border-radius: 25px;
+    padding: 31px 30px;
+    justify-content: space-around;
+  }
 }

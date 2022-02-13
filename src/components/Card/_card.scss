@@ -16,10 +16,21 @@
       font-weight: bold;
     }
   }
+  @include desktop {
+    height: 340px;
+    width: 340px;
+    margin: 25px 5px;
+  }
 
   img {
     filter: brightness(75%);
     transition: filter 0.3s;
+    height: 255px;
+    width: 335px;
+    @include desktop {
+      height: 340px;
+      width: 340px;
+    }
   }
 
   h2 {
