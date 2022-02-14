@@ -1,0 +1,44 @@
+.housing-sheet {
+  h1 {
+    margin: 0.3125rem 0;
+    font-size: 1.125rem;
+
+    @include desktop {
+      font-size: 2.25rem;
+      margin-top: 2.1875rem;
+    }
+  }
+  h2 {
+    font-size: 0.875rem;
+    margin-bottom: 10px;
+    @include desktop {
+      font-size: 1.125rem;
+      margin-bottom: 20px;
+    }
+  }
+  .tagsContainer {
+    display: flex;
+    font-size: 10px;
+    color: white;
+    @include desktop {
+      font-size: 14px;
+    }
+    .tag {
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-right: 10px;
+      min-height: 18px;
+      width: 84px;
+      background: $color-1;
+      border-radius: 5px;
+      font-weight: bold;
+      @include desktop {
+        min-height: 25px;
+        border-radius: 10px;
+        width: 115px;
+      }
+    }
+  }
+}
