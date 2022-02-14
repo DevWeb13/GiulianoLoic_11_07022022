@@ -1,0 +1,36 @@
+.stars {
+  display: flex;
+  position: relative;
+  margin-top: 27px;
+  @include desktop {
+    width: max-content;
+    position: absolute;
+    right: 0;
+    bottom: 22px;
+  }
+  .starsGreyContainer,
+  .starsRedContainer {
+    display: flex;
+
+    .starGrey,
+    .starRed {
+      height: 16px;
+      width: 16px;
+      margin-right: 5px;
+      margin-left: 0;
+      @include desktop {
+        height: 30px;
+        width: 30px;
+        margin-left: 10px;
+        margin-right: 0;
+      }
+    }
+  }
+  .starsRedContainer {
+    position: absolute;
+
+    @include desktop {
+      left: 0;
+    }
+  }
+}

@@ -1,6 +1,7 @@
 import { useParams } from 'react-router-dom'
 import { getHousing } from '../../services/dataManager'
 import Gallery from '../../components/Gallery/Gallery'
+import Stars from '../../components/Stars/Stars'
 
 function HousingSheet() {
   const { housingId } = useParams()
@@ -17,6 +18,7 @@ function HousingSheet() {
           <div className="tag">{tag}</div>
         ))}
       </div>
+      <Stars housingDatasRating={housingDatas.rating} />
     </div>
   )
 }
