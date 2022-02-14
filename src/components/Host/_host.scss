@@ -1,0 +1,34 @@
+.host {
+  display: flex;
+  align-items: center;
+  @include desktop {
+    position: relative;
+    bottom: 139px;
+  }
+  .name {
+    width: 70px;
+    font-size: 12px;
+    @include desktop {
+      font-size: 18px;
+      width: 90px;
+    }
+  }
+  .imgContainer {
+    border-radius: 50%;
+    overflow: hidden;
+    height: 32px;
+    width: 32px;
+    @include desktop {
+      height: 64px;
+      width: 64px;
+    }
+    img {
+      height: 32px;
+      width: 32px;
+      @include desktop {
+        height: 64px;
+        width: 64px;
+      }
+    }
+  }
+}

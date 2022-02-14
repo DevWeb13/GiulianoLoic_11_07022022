@@ -2,6 +2,7 @@ import { useParams } from 'react-router-dom'
 import { getHousing } from '../../services/dataManager'
 import Gallery from '../../components/Gallery/Gallery'
 import Stars from '../../components/Stars/Stars'
+import Host from '../../components/Host/Host'
 
 function HousingSheet() {
   const { housingId } = useParams()
@@ -14,11 +15,16 @@ function HousingSheet() {
       <h1>{housingDatas.title}</h1>
       <h2>{housingDatas.location}</h2>
       <div className="tagsContainer">
-        {housingDatas.tags.map((tag) => (
-          <div className="tag">{tag}</div>
+        {housingDatas.tags.map((tag, index) => (
+          <div key={index} className="tag">
+            {tag}
+          </div>
         ))}
       </div>
-      <Stars housingDatasRating={housingDatas.rating} />
+      <div className="starsAndHostContainer">
+        <Stars housingDatasRating={housingDatas.rating} />
+        <Host housingHost={housingDatas.host} />
+      </div>
     </div>
   )
 }

@@ -3,6 +3,7 @@ header {
   height: 2.9375rem;
   justify-content: space-between;
   align-items: center;
+  margin-bottom: 30px;
   @include desktop {
     height: 4.25rem;
   }
@@ -23,6 +24,7 @@ header {
     a {
       margin: 0.3125rem;
       position: relative;
+      font-weight: bold;
       @include desktop {
         margin-left: 3.5625rem;
       }

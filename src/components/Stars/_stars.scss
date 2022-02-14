@@ -1,12 +1,12 @@
 .stars {
   display: flex;
   position: relative;
-  margin-top: 27px;
+  // margin-top: 27px;
   @include desktop {
     width: max-content;
     position: absolute;
     right: 0;
-    bottom: 22px;
+    bottom: 87px;
   }
   .starsGreyContainer,
   .starsRedContainer {

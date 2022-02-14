@@ -23,11 +23,11 @@
   }
 
   img {
-    filter: brightness(75%);
     transition: filter 0.3s;
     height: 255px;
     width: 335px;
     @include desktop {
+      filter: brightness(75%);
       height: 340px;
       width: 340px;
     }
