@@ -3,6 +3,7 @@ import { getHousing } from '../../services/dataManager'
 import Gallery from '../../components/Gallery/Gallery'
 import Stars from '../../components/Stars/Stars'
 import Host from '../../components/Host/Host'
+import Collapse from '../../components/Collapse/Collapse'
 
 function HousingSheet() {
   const { housingId } = useParams()
@@ -12,19 +13,29 @@ function HousingSheet() {
   return (
     <div className="housing-sheet">
       <Gallery housingPictures={housingDatas.pictures} />
-      <h1>{housingDatas.title}</h1>
-      <h2>{housingDatas.location}</h2>
-      <div className="tagsContainer">
-        {housingDatas.tags.map((tag, index) => (
-          <div key={index} className="tag">
-            {tag}
+      <div className="presentation">
+        <div className="titleLocationTagsContainer">
+          <h1>{housingDatas.title}</h1>
+          <h2>{housingDatas.location}</h2>
+          <div className="tagsContainer">
+            {housingDatas.tags.map((tag, index) => (
+              <div key={index} className="tag">
+                {tag}
+              </div>
+            ))}
           </div>
-        ))}
+        </div>
+
+        <section className="starsAndHostContainer">
+          <Stars housingDatasRating={housingDatas.rating} />
+          <Host housingHost={housingDatas.host} />
+        </section>
       </div>
-      <div className="starsAndHostContainer">
-        <Stars housingDatasRating={housingDatas.rating} />
-        <Host housingHost={housingDatas.host} />
-      </div>
+
+      <section className="collapsesContainer">
+        <Collapse title="Description" content={housingDatas.description} />
+        <Collapse title="Équipements" content={housingDatas.equipments} />
+      </section>
     </div>
   )
 }

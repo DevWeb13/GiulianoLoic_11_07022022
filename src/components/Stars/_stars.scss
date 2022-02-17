@@ -4,9 +4,9 @@
   // margin-top: 27px;
   @include desktop {
     width: max-content;
-    position: absolute;
+    bottom: 15px;
     right: 0;
-    bottom: 87px;
+    // top: 525px;
   }
   .starsGreyContainer,
   .starsRedContainer {

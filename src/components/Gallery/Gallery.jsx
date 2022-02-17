@@ -23,22 +23,29 @@ const Gallery = ({ housingPictures }) => {
     }
     currentPicture = housingPictures[chooseImg]
   }
-
+  console.log(housingPictures.length)
   return (
     <div className="card gallery">
-      <button
-        className="arrow"
-        id="leftArrow"
-        type="button"
-        onClick={previousImg}
-      ></button>
+      {housingPictures.length !== 1 && (
+        <button
+          className="arrow"
+          id="leftArrow"
+          type="button"
+          onClick={previousImg}
+          name="previous"
+        ></button>
+      )}
+
       <img src={currentPicture} alt="" />
-      <button
-        className="arrow"
-        id="rightArrow"
-        type="button"
-        onClick={nextImg}
-      ></button>
+      {housingPictures.length !== 1 && (
+        <button
+          className="arrow"
+          id="rightArrow"
+          type="button"
+          onClick={nextImg}
+          name="next"
+        ></button>
+      )}
       <p>
         {chooseImg + 1}/{housingPictures.length}
       </p>

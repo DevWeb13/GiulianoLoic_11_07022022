@@ -1,10 +1,6 @@
 .host {
   display: flex;
   align-items: center;
-  @include desktop {
-    position: relative;
-    bottom: 139px;
-  }
   .name {
     width: 70px;
     font-size: 12px;
