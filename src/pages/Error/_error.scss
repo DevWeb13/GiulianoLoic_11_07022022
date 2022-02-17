@@ -1,0 +1,36 @@
+.error {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+  h1 {
+    font-size: 96px;
+    font-weight: 700;
+    margin-top: 162px;
+    @include desktop {
+      font-size: 288px;
+      margin-top: 95px;
+    }
+  }
+  h2 {
+    font-size: 18px;
+    text-align: center;
+    font-weight: 500;
+    padding: 0 5%;
+    @include desktop {
+      font-size: 36px;
+      margin-top: 23px;
+    }
+  }
+  a {
+    font-size: 14px;
+    font-weight: 500;
+    text-decoration: underline;
+    margin-top: 140px;
+    display: block;
+    @include desktop {
+      font-size: 18px;
+      margin-top: 191px;
+    }
+  }
+}
