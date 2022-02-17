@@ -4,6 +4,7 @@ header {
   justify-content: space-between;
   align-items: center;
   margin-bottom: 30px;
+  width: 100%;
   @include desktop {
     height: 4.25rem;
   }

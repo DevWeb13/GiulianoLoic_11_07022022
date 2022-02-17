@@ -8,6 +8,7 @@ import Error from './pages/Error/Error'
 import './styles/index.scss'
 
 import Header from './components/Header/Header'
+import Footer from './components/Footer/Footer'
 
 ReactDOM.render(
   <React.StrictMode>
@@ -22,6 +23,7 @@ ReactDOM.render(
         <Route path="/a-propos" element={<About />}></Route>
         <Route path="*" element={<Error />}></Route>
       </Routes>
+      <Footer />
     </BrowserRouter>
   </React.StrictMode>,
   document.getElementById('root')
