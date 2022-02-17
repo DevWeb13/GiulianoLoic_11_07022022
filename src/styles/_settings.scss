@@ -16,7 +16,9 @@ $desktopMinWidth: 62rem;
   margin: 0;
   padding: 0;
 }
-
+body {
+  overflow-x: hidden;
+}
 #root {
   font-family: $font-1;
   color: $color-1;
@@ -26,7 +28,7 @@ $desktopMinWidth: 62rem;
   display: flex;
   flex-direction: column;
   align-items: center;
-  min-height: 74vh;
+  min-height: 71vh;
   position: relative;
 
   @include desktop {
