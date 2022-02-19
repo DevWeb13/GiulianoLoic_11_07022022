@@ -11,7 +11,7 @@ function HousingSheet() {
   const housingDatas = getHousing(housingId)
 
   return (
-    <div className="housing-sheet">
+    <main className="housing-sheet mainMobile mainDesktop">
       <Gallery housingPictures={housingDatas.pictures} />
       <div className="presentation">
         <div className="titleLocationTagsContainer">
@@ -36,7 +36,7 @@ function HousingSheet() {
         <Collapse title="Description" content={housingDatas.description} />
         <Collapse title="Équipements" content={housingDatas.equipments} />
       </section>
-    </div>
+    </main>
   )
 }
 

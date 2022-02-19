@@ -1,13 +1,12 @@
 .card {
-  height: 255px;
-  width: 335px;
-  margin: 10px auto;
-  border-radius: 10px;
+  height: 15.9375rem;
+  width: 20.9375rem;
+  margin: 0.625rem auto;
+  border-radius: 0.625rem;
   overflow: hidden;
   display: flex;
   position: relative;
   align-items: flex-end;
-
   &:hover {
     img {
       filter: brightness(100%);
@@ -17,28 +16,26 @@
     }
   }
   @include desktop {
-    height: 340px;
-    width: 340px;
-    margin: 25px 5px;
+    height: 21.25rem;
+    width: 21.25rem;
+    margin: 1.5625rem 0.3125rem;
   }
-
   img {
     transition: filter 0.3s;
-    height: 255px;
-    width: 335px;
+    height: 15.9375rem;
+    width: 20.9375rem;
     @include desktop {
       filter: brightness(75%);
-      height: 340px;
-      width: 340px;
+      height: 21.25rem;
+      width: 21.25rem;
     }
   }
-
   h2 {
     position: absolute;
-    font-size: 18px;
+    font-size: 1.125rem;
     color: #fff;
-    margin-bottom: 15px;
-    margin-left: 19px;
+    margin-bottom: 0.9375rem;
+    margin-left: 1.1875rem;
     width: 50%;
     font-weight: 500;
     transition: font-weight color 0.3s;

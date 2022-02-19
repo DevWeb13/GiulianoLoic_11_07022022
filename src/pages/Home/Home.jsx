@@ -2,12 +2,11 @@ import Section1 from '../../components/Section1/Section1'
 import Thumb from '../../components/Thumb/Thumb'
 
 function Home() {
-  /* const Home = () => {} */
   return (
-    <div className="home">
+    <main className="home mainMobile mainDesktop">
       <Section1 />
       <Thumb />
-    </div>
+    </main>
   )
 }
 

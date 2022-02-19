@@ -3,9 +3,8 @@ import { NavLink } from 'react-router-dom'
 function Header() {
   return (
     <header>
-      <div className="logo">
-        <img src="../img/logo.png" alt="logo" />
-      </div>
+      <img src="../img/logo.png" alt="logo" />
+
       <nav>
         <NavLink
           to="/"

@@ -1,8 +1,8 @@
 function About() {
   return (
-    <div>
+    <main className="mainMobile mainDesktop">
       <h1>A Propos 🧮</h1>
-    </div>
+    </main>
   )
 }
 

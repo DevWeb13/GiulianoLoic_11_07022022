@@ -31,23 +31,13 @@ const Collapse = ({ title, content }) => {
           </svg>
         </button>
       </div>
-      {isOpen ? (
-        <ul className="content contentOpen">
-          {typeof content === 'string' ? (
-            <li>{content}</li>
-          ) : (
-            content.map((elm, index) => <li key={index}>{elm}</li>)
-          )}
-        </ul>
-      ) : (
-        <ul className="content contentClose">
-          {typeof content === 'string' ? (
-            <li>{content}</li>
-          ) : (
-            content.map((elm, index) => <li key={index}>{elm}</li>)
-          )}
-        </ul>
-      )}
+      <ul className={isOpen ? 'content contentOpen' : 'content contentClose'}>
+        {typeof content === 'string' ? (
+          <li>{content}</li>
+        ) : (
+          content.map((elm, index) => <li key={index}>{elm}</li>)
+        )}
+      </ul>
     </section>
   )
 }

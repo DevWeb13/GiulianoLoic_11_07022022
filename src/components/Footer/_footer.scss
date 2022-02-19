@@ -1,11 +1,10 @@
 footer {
   background: black;
   text-align: center;
-  height: 209px;
-  width: 100vw;
-  position: absolute;
-  bottom: 0;
-  // overflow: hidden;
+  height: $hauteurFooter;
+  width: 100%;
+  margin-top: 20px;
+
   img {
     margin-top: 62px;
   }
@@ -17,7 +16,7 @@ footer {
     font-size: 12px;
 
     justify-content: center;
-    align-items: end;
+    align-items: flex-end;
     @include desktop {
       font-size: 24px;
       margin-top: 31px;

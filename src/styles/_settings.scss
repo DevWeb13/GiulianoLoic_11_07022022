@@ -4,6 +4,10 @@ $color-1: #ff6060;
 $color-2: #f7f7f7;
 $color-3: #e3e3e3;
 
+$hauteurHeaderMobile: 83px;
+$hauteurHeaderDesktop: 171px;
+$hauteurFooter: 209px;
+
 $desktopMinWidth: 62rem;
 @mixin desktop {
   @media screen and (min-width: $desktopMinWidth) {
@@ -18,23 +22,25 @@ $desktopMinWidth: 62rem;
 }
 body {
   overflow-x: hidden;
+  // padding-top: 1.25rem;
+  // min-height: calc(100vh - 1.25rem);
 }
 #root {
   font-family: $font-1;
   color: $color-1;
-  margin: 1.25rem auto 0 auto;
-  padding: 0 1.25rem;
+  margin: 0 auto;
+  // padding: 0 1.25rem;
   max-width: 23.4375rem;
   display: flex;
   flex-direction: column;
   align-items: center;
-  min-height: 100vh;
-  position: relative;
+  // min-height: 100vh;
+  // position: relative;
 
   @include desktop {
     max-width: 90rem;
-    margin: 2.5rem auto 0 auto;
-    padding: 0 6.25rem;
+    // margin: 2.5rem auto 0 auto;
+    // padding: 0 6.25rem;
   }
 }
 li {
@@ -48,4 +54,17 @@ a {
 
 button {
   cursor: pointer;
+}
+
+#root > .mainMobile {
+  min-height: calc(100vh - calc($hauteurFooter + $hauteurHeaderMobile + 20px));
+  width: 90%;
+}
+
+#root > .mainDesktop {
+  @include desktop {
+    min-height: calc(
+      100vh - calc($hauteurFooter + $hauteurHeaderDesktop + 20px)
+    );
+  }
 }

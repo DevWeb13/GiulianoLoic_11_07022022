@@ -1,23 +1,27 @@
 header {
   display: flex;
-  height: 2.9375rem;
+  height: $hauteurHeaderMobile;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 30px;
-  width: 100%;
+
+  width: 90%;
+
   @include desktop {
-    height: 4.25rem;
+    height: $hauteurHeaderDesktop;
   }
-  .logo {
-    height: 100%;
-    img {
-      height: 100%;
+
+  img {
+    height: 47px;
+    @include desktop {
+      height: 68px;
     }
   }
+
   nav {
     text-transform: uppercase;
     display: flex;
     font-size: 0.75rem;
+
     @include desktop {
       text-transform: none;
       font-size: 1.5rem;
@@ -25,7 +29,7 @@ header {
     a {
       margin: 0.3125rem;
       position: relative;
-      font-weight: bold;
+      font-weight: 500;
       @include desktop {
         margin-left: 3.5625rem;
       }

@@ -56,15 +56,23 @@
     }
   }
   .content {
-    padding: 23px 7px 3px 11px;
+    // padding: 23px 7px 3px 11px;
     border-radius: 5px;
     width: 100%;
     background: $color-2;
-    overflow: hidden;
-    position: relative;
+    text-align: justify;
+    // width: 90%;
+    margin: 0 auto;
+
+    // overflow: hidden;
+    // position: relative;
     @include desktop {
-      padding: 30px 12px 27px 20px;
+      // padding: 30px 12px 27px 20px;
       border-radius: 10px;
+    }
+    li {
+      width: 90%;
+      margin: 0 auto;
     }
   }
   .contentClose {
@@ -82,6 +90,8 @@
   .contentOpen {
     transition: 0.5s ease-in-out;
     bottom: 3px;
+    padding: 10px 0;
+
     @include desktop {
       bottom: 15px;
       height: 100%;
