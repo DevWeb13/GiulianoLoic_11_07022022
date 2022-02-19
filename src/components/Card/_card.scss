@@ -22,7 +22,7 @@
   }
   @include desktop {
     height: 21.25rem;
-    width: 21.25rem;
+    max-width: 21.25rem;
     margin: 1.5625rem 0.3125rem;
   }
   img {
