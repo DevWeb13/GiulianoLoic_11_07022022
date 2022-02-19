@@ -13,7 +13,9 @@ import Footer from './components/Footer/Footer'
 ReactDOM.render(
   <React.StrictMode>
     <BrowserRouter>
-      <Header />
+      <Routes>
+        <Route path="*" element={<Header />}></Route>
+      </Routes>
       <Routes>
         <Route path="/" element={<Home />}></Route>
         <Route
@@ -23,7 +25,9 @@ ReactDOM.render(
         <Route path="/a-propos" element={<About />}></Route>
         <Route path="*" element={<Error />}></Route>
       </Routes>
-      <Footer />
+      <Routes>
+        <Route path="*" element={<Footer />}></Route>
+      </Routes>
     </BrowserRouter>
   </React.StrictMode>,
   document.getElementById('root')

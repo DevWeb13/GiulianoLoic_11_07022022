@@ -6,7 +6,7 @@
   }
   @include desktop {
     height: 25.9375rem;
-    width: 100%;
+    max-width: 100%;
   }
   .arrow {
     font-family: 'Font Awesome 5 Free';
