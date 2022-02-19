@@ -1,34 +1,33 @@
 .collapse {
-  margin-top: 16px;
-  font-size: 13px;
+  margin-top: 1rem;
+  font-size: 0.8125rem;
   position: relative;
   overflow: hidden;
   @include desktop {
     width: 46.3%;
-    font-size: 18px;
+    font-size: 1.125rem;
     display: flex;
     flex-direction: column;
   }
   .title {
     background: $color-1;
-    height: 30px;
+    height: 1.875rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    border-radius: 5px;
+    border-radius: 0.3125rem;
     position: relative;
     z-index: 1;
     @include desktop {
-      height: 52px;
-      min-height: 52px;
-      border-radius: 10px;
+      height: 3.25rem;
+      min-height: 3.25rem;
+      border-radius: 0.625rem;
     }
     h3 {
       color: #fff;
-
-      margin-left: 11px;
+      margin-left: 0.6875rem;
       @include desktop {
-        margin-left: 20px;
+        margin-left: 1.25rem;
       }
     }
     .bt,
@@ -37,13 +36,13 @@
       align-items: center;
       background: transparent;
       border: 0;
-      margin-right: 10px;
-      width: 16px;
-      height: 10px;
+      margin-right: 0.625rem;
+      width: 1rem;
+      height: 0.625rem;
       @include desktop {
-        width: 27px;
-        height: 16px;
-        margin-right: 18px;
+        width: 1.6875rem;
+        height: 1rem;
+        margin-right: 1.125rem;
       }
     }
     .bt {
@@ -56,19 +55,13 @@
     }
   }
   .content {
-    // padding: 23px 7px 3px 11px;
-    border-radius: 5px;
+    border-radius: 0.3125rem;
     width: 100%;
     background: $color-2;
     text-align: justify;
-    // width: 90%;
     margin: 0 auto;
-
-    // overflow: hidden;
-    // position: relative;
     @include desktop {
-      // padding: 30px 12px 27px 20px;
-      border-radius: 10px;
+      border-radius: 0.625rem;
     }
     li {
       width: 90%;
@@ -77,9 +70,9 @@
   }
   .contentClose {
     transition: 0.5s ease-in-out;
-    bottom: 28px;
+    bottom: 1.75rem;
     @include desktop {
-      bottom: 57px;
+      bottom: 3.5625rem;
     }
     li {
       transition: 0.5s ease-in-out;
@@ -89,25 +82,23 @@
   }
   .contentOpen {
     transition: 0.5s ease-in-out;
-    bottom: 3px;
-    padding: 10px 0;
-
+    bottom: 0.1875rem;
+    padding: 0.625rem 0;
     @include desktop {
-      bottom: 15px;
+      bottom: 0.9375rem;
       height: 100%;
     }
     li {
       transition: 0.5s ease-in-out;
       opacity: 100;
-      // font-size: 1;
     }
   }
 }
 .collapseClose {
-  height: 30px;
+  height: 1.875rem;
   transition: 0.5s ease-in-out;
   @include desktop {
-    height: 53px;
+    height: 3.3125rem;
   }
 }
 .collapseOpen {
@@ -117,4 +108,3 @@
     min-height: 100%;
   }
 }
-/* The animation code */

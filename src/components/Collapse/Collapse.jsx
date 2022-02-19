@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 
-const Collapse = ({ title, content }) => {
+function Collapse({ title, content }) {
   const [isOpen, setIsOpen] = useState(false)
 
   const openOrCloseCollapse = () => {

@@ -1,0 +1,7 @@
+.about {
+  .collapse {
+    @include desktop {
+      width: 100%;
+    }
+  }
+}

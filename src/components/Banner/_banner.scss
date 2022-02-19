@@ -1,0 +1,45 @@
+.banner {
+  background-blend-mode: darken;
+  border-radius: 0.625rem;
+  @include desktop {
+    border-radius: 1.5625rem;
+  }
+}
+
+.bannerHome {
+  background: rgba(0, 0, 0, 0.3) url('../../../public/img/section1Mobile.png')
+    center/cover;
+  height: 6.9375rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  @include desktop {
+    background: rgba(0, 0, 0, 0.3)
+      url('../../../public/img/section1Desktop.png') center/cover;
+    height: 13.9375rem;
+  }
+  h1 {
+    font-weight: 500;
+    width: 13.5625rem;
+    position: relative;
+    right: 1.875rem;
+    @include desktop {
+      font-size: 3rem;
+      width: max-content;
+      right: 0;
+    }
+  }
+}
+
+.bannerAbout {
+  height: 13.9375rem;
+  background: rgba(0, 0, 0, 0.3) url('../../../public/img/section2Mobile.png');
+  @include desktop {
+    background: rgba(0, 0, 0, 0.3)
+      url('../../../public/img/section2Desktop.png') center/cover;
+  }
+  h1 {
+    display: none;
+  }
+}

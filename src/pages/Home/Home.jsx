@@ -1,10 +1,10 @@
-import Section1 from '../../components/Section1/Section1'
+import Banner from '../../components/Banner/Banner'
 import Thumb from '../../components/Thumb/Thumb'
 
 function Home() {
   return (
     <main className="home mainMobile mainDesktop">
-      <Section1 />
+      <Banner />
       <Thumb />
     </main>
   )

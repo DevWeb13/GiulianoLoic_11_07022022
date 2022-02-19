@@ -1,6 +1,9 @@
 .gallery {
   position: relative;
   color: #fff;
+  &:after {
+    display: none;
+  }
   @include desktop {
     height: 25.9375rem;
     width: 100%;
