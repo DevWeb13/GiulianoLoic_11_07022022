@@ -19,16 +19,11 @@ function HousingSheet() {
           <h1>{housingDatas.title}</h1>
           <h2>{housingDatas.location}</h2>
           <div className="tagsContainer">
-            {housingDatas.tags.map(
-              (
-                /** @type {boolean | import("react").ReactChild | import("react").ReactFragment | import("react").ReactPortal} */ tag,
-                /** @type {import("react").Key} */ index
-              ) => (
-                <div key={index} className="tag">
-                  {tag}
-                </div>
-              )
-            )}
+            {housingDatas.tags.map((tag, index) => (
+              <div key={index} className="tag">
+                {tag}
+              </div>
+            ))}
           </div>
         </div>
 
