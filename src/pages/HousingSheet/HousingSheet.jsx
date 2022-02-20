@@ -4,13 +4,18 @@ import Gallery from '../../components/Gallery/Gallery'
 import Stars from '../../components/Stars/Stars'
 import Host from '../../components/Host/Host'
 import Collapse from '../../components/Collapse/Collapse'
+import Error from '../Error/Error'
 
 function HousingSheet() {
   const { housingId } = useParams()
 
   const housingDatas = getHousing(housingId)
 
-  return (
+  console.log(housingDatas)
+
+  return housingDatas.pictures === undefined ? (
+    <Error />
+  ) : (
     <main className="housing-sheet mainMobile mainDesktop">
       <Gallery housingPictures={housingDatas.pictures} />
       <div className="presentation">
