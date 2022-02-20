@@ -6,7 +6,6 @@ import HousingSheet from './pages/HousingSheet/HousingSheet'
 import About from './pages/About/About'
 import Error from './pages/Error/Error'
 import './styles/index.scss'
-
 import Header from './components/Header/Header'
 import Footer from './components/Footer/Footer'
 

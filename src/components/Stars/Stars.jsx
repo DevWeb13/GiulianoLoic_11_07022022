@@ -1,6 +1,12 @@
 import React from 'react'
-
-const Stars = ({ housingDatasRating }) => {
+/**
+ * Stars component
+ *
+ * @prop   {string}  housingDatasRating  number of stars
+ *
+ * @return  {React.ReactElement}      Stars component
+ */
+function Stars({ housingDatasRating }) {
   const starsGrey = []
   for (let i = 0; i < 5; i++) {
     starsGrey.push(i)

@@ -1,6 +1,13 @@
 import React from 'react'
 import { useState } from 'react'
 
+/**
+ * Gallery component
+ *
+ * @prop   {array}  housingPictures  [Array with links pictures]
+ *
+ * @return  {React.ReactElement}      Gallery component
+ */
 const Gallery = ({ housingPictures }) => {
   const [chooseImg, setChooseImg] = useState(0)
   let currentPicture = housingPictures[chooseImg]
@@ -23,7 +30,6 @@ const Gallery = ({ housingPictures }) => {
     }
     currentPicture = housingPictures[chooseImg]
   }
-  console.log(housingPictures.length)
   return (
     <div className="card gallery">
       {housingPictures.length !== 1 && (

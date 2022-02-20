@@ -1,14 +1,13 @@
 .thumb {
   display: flex;
-  // flex-wrap: wrap;
   flex-direction: column;
   @include desktop {
     background-color: $color-2;
-    border-radius: 25px;
-    padding: 31px 30px;
+    border-radius: 1.5625rem;
+    padding: 1.9375rem 1.875rem;
     justify-content: space-around;
     flex-wrap: wrap;
     flex-direction: row;
-    margin-top: 43px;
+    margin-top: 2.6875rem;
   }
 }

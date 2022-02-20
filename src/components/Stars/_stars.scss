@@ -1,34 +1,30 @@
 .stars {
   display: flex;
   position: relative;
-  // margin-top: 27px;
   @include desktop {
     width: max-content;
-    bottom: 15px;
+    bottom: 0.9375rem;
     right: 0;
-    // top: 525px;
   }
   .starsGreyContainer,
   .starsRedContainer {
     display: flex;
-
     .starGrey,
     .starRed {
-      height: 16px;
-      width: 16px;
-      margin-right: 5px;
+      height: 1rem;
+      width: 1rem;
+      margin-right: 0.3125rem;
       margin-left: 0;
       @include desktop {
-        height: 30px;
-        width: 30px;
-        margin-left: 10px;
+        height: 1.875rem;
+        width: 1.875rem;
+        margin-left: 0.625rem;
         margin-right: 0;
       }
     }
   }
   .starsRedContainer {
     position: absolute;
-
     @include desktop {
       left: 0;
     }

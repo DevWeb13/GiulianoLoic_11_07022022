@@ -1,5 +1,10 @@
 import datas from '../datas/housing.json'
 
+/**
+ * recover id, title, cover of each property
+ *
+ * @return  {array}  id, title, cover of each property
+ */
 function getAllHousing() {
   const AllHousing = []
   datas.forEach((house) => {
@@ -12,6 +17,13 @@ function getAllHousing() {
   return AllHousing
 }
 
+/**
+ * recover property data
+ *
+ * @param   {string}  id  [property identifier]
+ *
+ * @return  {object}      property data
+ */
 function getHousing(id) {
   let housingData = {}
   datas.forEach((house) => {

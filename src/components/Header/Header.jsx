@@ -4,7 +4,6 @@ function Header() {
   return (
     <header>
       <img src="../img/logo.png" alt="logo" />
-
       <nav>
         <NavLink
           to="/"

@@ -1,5 +1,13 @@
 import React, { useState } from 'react'
 
+/**
+ * Collapse component
+ *
+ * @prop   {string}  title
+ * @prop   {string/object}  content
+ *
+ * @return  {React.ReactElement}      Collapse component
+ */
 function Collapse({ title, content }) {
   const [isOpen, setIsOpen] = useState(false)
 
@@ -35,7 +43,12 @@ function Collapse({ title, content }) {
         {typeof content === 'string' ? (
           <li>{content}</li>
         ) : (
-          content.map((elm, index) => <li key={index}>{elm}</li>)
+          content.map(
+            (
+              /** @type {boolean | React.ReactChild | React.ReactFragment | React.ReactPortal} */ elm,
+              /** @type {React.Key} */ index
+            ) => <li key={index}>{elm}</li>
+          )
         )}
       </ul>
     </section>
