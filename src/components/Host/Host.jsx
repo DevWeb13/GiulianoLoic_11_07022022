@@ -8,7 +8,6 @@ import React from 'react'
  * @return  {React.ReactElement}      Host component
  */
 const Host = ({ housingHost }) => {
-  console.log(housingHost)
   return (
     <div className="host">
       <p className="name">{housingHost.name}</p>

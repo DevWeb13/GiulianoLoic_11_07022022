@@ -13,7 +13,6 @@ const Gallery = ({ housingPictures }) => {
   let currentPicture = housingPictures[chooseImg]
 
   const previousImg = () => {
-    console.log(chooseImg)
     if (chooseImg === 0) {
       setChooseImg(housingPictures.length - 1)
     } else {
