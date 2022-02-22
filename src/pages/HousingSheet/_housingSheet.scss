@@ -4,48 +4,7 @@
       display: flex;
       justify-content: space-between;
     }
-    h1 {
-      margin: 0.3125rem 0;
-      font-size: 1.125rem;
-      @include desktop {
-        font-size: 2.25rem;
-      }
-    }
-    h2 {
-      font-size: 0.875rem;
-      margin-bottom: 0.625rem;
-      margin-top: 0.9375rem;
-      @include desktop {
-        font-size: 1.125rem;
-        margin-bottom: 1.3125rem;
-        margin-top: 0;
-      }
-    }
-    .tagsContainer {
-      display: flex;
-      font-size: 0.625rem;
-      color: white;
-      @include desktop {
-        font-size: 0.875rem;
-      }
-      .tag {
-        text-align: center;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-right: 0.625rem;
-        min-height: 1.125rem;
-        width: 5.25rem;
-        background: $color-1;
-        border-radius: 0.3125rem;
-        font-weight: bold;
-        @include desktop {
-          min-height: 1.5625rem;
-          border-radius: 0.625rem;
-          width: 7.1875rem;
-        }
-      }
-    }
+
     .starsAndHostContainer {
       position: relative;
       display: flex;
