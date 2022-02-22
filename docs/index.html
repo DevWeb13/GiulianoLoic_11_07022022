@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>JSDoc: Home</title>
+
+    <script src="scripts/prettify/prettify.js"> </script>
+    <script src="scripts/prettify/lang-css.js"> </script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link type="text/css" rel="stylesheet" href="styles/prettify-tomorrow.css">
+    <link type="text/css" rel="stylesheet" href="styles/jsdoc-default.css">
+</head>
+
+<body>
+
+<div id="main">
+
+    <h1 class="page-title">Home</h1>
+
+    
+
+
+
+    
+
+
+    <h3> </h3>
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
+
+    <section>
+        <article><h1>GiulianoLoic_11_07022022</h1>
+<h2>Table des matières</h2>
+<ol>
+<li><a href="#D%C3%A9veloppez-une-application-Web-avec-React-et-React-Router">Développez une application Web avec React et React Router</a>
+<ul>
+<li><a href="#Livrables">Livrables</a></li>
+<li><a href="#Soutenance">Soutenance</a></li>
+</ul>
+</li>
+<li><a href="#Comp%C3%A9tences-%C3%A9valu%C3%A9es">Compétences évaluées</a></li>
+<li><a href="#Site-final">Site final</a></li>
+</ol>
+<h1>Développez une application Web avec React et React Router</h1>
+<p>Kasa vous recrute en tant que développeur Front-end en freelance pour développer leur nouvelle plateforme web. Kasa est dans le métier de la location d’appartements entre particuliers depuis près de 10 ans maintenant. Avec plus de 500 annonces postées chaque jour Kasa fait partie des leaders de la location d’appartements entre particuliers en France.</p>
+<p>L'occasion parfaite pour vous d'ajouter une belle référence à votre portfolio de freelance !</p>
+<p>Le site de Kasa a été codé il y a maintenant plus de 10 ans en ASP.NET avec un code legacy important. Laura, la CTO, a donc lancé une refonte totale pour passer à une stack complète en JavaScript avec NodeJS côté Back-end, et React côté Front-end. Kasa en a également profité pour commander de nouvelles maquettes auprès de son designer habituel, qui est en freelance. Un gros chantier pour cette année !</p>
+<p>Un point est prévu avec la CTO plus tard dans la semaine, mais pour que vous puissiez vous familiariser avec les enjeux de votre mission vous trouvez le récapitulatif suivant dans votre boîte mail :</p>
+<p>Objet : Brief refonte site Kasa
+De : Laura
+À : moi</p>
+<p>Hello,
+Bienvenue pour ton premier jour !</p>
+<p>On est vraiment ravis de te compter parmi nous !
+Tu vas pouvoir nous aider à donner vie à un chantier sur lequel on travaille depuis plusieurs mois.</p>
+<p>Je préfère te mettre par écrit quelques éléments de contexte qui t'aideront à te projeter dans ta mission avant notre point de jeudi.</p>
+<p>Ton objectif</p>
+<p>Démarrer le projet React et développer l’ensemble de l’application, les composants React, les routes React Router, en suivant les maquettes Figma (responsives !) et toutes les infos que je te donne ci-dessous. Et ce avec un code de qualité !</p>
+<p>Back-end / data : Le recrutement de la personne en charge du Back-End n'est pas terminé et va prendre plus de temps que prévu. Du coup, il va falloir que tu fasses sans pour le moment. Je t'ai extrait les 20 dernières annonces de logements dans ce <a href="https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/Front-End+V2/P9+React+1/logements.json">fichier JSON</a> pour que tu puisses construire le Front qui correspond.</p>
+<p>Contraintes techniques</p>
+<p>Tu trouveras les <a href="https://course.oc-static.com/projects/Front-End+V2/P9+React+1/Coding+guidelines+Kasa+FR.pdf">coding guidelines de Kasa ici.</a></p>
+<p>Voilà j'espère que ce petit récapitulatif t'aura donné suffisamment de pistes pour aborder sereinement tes premiers jours chez nous.</p>
+<p>Très bonne journée à toi !</p>
+<p>Laura</p>
+<p>Plus tard dans la journée, vous recevez un e-mail de Paul, le designer, qui vous donne plus d’informations sur le design et les fonctionnalités du site.</p>
+<p>Objet : Fonctionnalité et design
+De : Paul
+À : moi</p>
+<p>Salut,</p>
+<p>Bienvenue parmi nous ! Laura m’a dit de te briefer sur le design de la nouvelle version du site alors voici les infos clés.</p>
+<p>Design</p>
+<p>Voici <a href="https://www.figma.com/file/bAnXDNqRKCRRP8mY2gcb5p/UI-Design?node-id=4%3A1">les maquettes sur Figma</a> pour le design d’interface. J’ai l’habitude de travailler avec la logique de composants sur Figma, Sandra m’a dit que ça te faciliterait le travail sur React. Tu trouveras toutes les ressources dont tu as besoin directement dans la maquette (logo, icônes pour les composants, etc.). Pour cela, il suffit de cliquer sur la ressource souhaitée et de faire &quot;Exporter&quot; au format voulu.</p>
+<p>Contraintes fonctionnelles</p>
+<p>Quelques précisions sur les fonctionnalités du site :</p>
+<ul>
+<li>
+<p>Pour le défilement des photos dans la galerie (composant Gallery) :</p>
+<ul>
+<li>Si l'utilisateur se trouve à la première image et qu'il clique sur &quot;image précédente&quot;, la galerie affiche la dernière image.</li>
+<li>Inversement, quand l'image affichée est la dernière de la galerie, si l'utilisateur clique sur &quot;image suivante&quot;, la galerie affiche la première image.</li>
+<li>S'il n'y a qu'une seule image, les boutons &quot;suivant&quot; et &quot;précédent&quot; n'apparaissent pas.</li>
+<li>La galerie doit toujours rester de la même hauteur, celle indiquée sur la maquette Figma. Les images seront donc coupées et centrées dans le cadre de l’image.</li>
+</ul>
+</li>
+<li>
+<p>Collapse : Par défaut, les Collapse sont fermés à l'initialisation de la page.</p>
+</li>
+<li>
+<p>Si le Collapse est ouvert, le clic de l'utilisateur permet de le fermer.</p>
+<ul>
+<li>Inversement, si le Collapse est fermé, un clic permet de l'ouvrir.</li>
+</ul>
+</li>
+</ul>
+<p>Bon courage pour le développement, j’ai hâte de voir ce que ça va donner !</p>
+<p>Paul</p>
+<p>Ça y est, vous avez toutes les informations nécessaires, vous pouvez démarrer votre développement !</p>
+<h2>Livrables</h2>
+<ul>
+<li>Le lien du repository GitHub contenant l’ensemble du code du projet :
+<ul>
+<li>Le code React du projet</li>
+<li>Le code React Router pour les routes dans un fichier dédié</li>
+</ul>
+</li>
+</ul>
+<p>Le repo GitHub doit être nommé avec la convention suivante : Nomcomplet_#_Datedémarrage. Le # correspond au numéro du projet sur le parcours et la date doit être au format jjmmaaaa. Par exemple, FrancoisLenotre_5_05032020.</p>
+<h2>Soutenance</h2>
+<p>Durant la présentation orale, le mentor interprétera le rôle du CTO. La soutenance est structurée de la manière suivante :</p>
+<ul>
+<li>Présentation des livrables (15 minutes)
+<ul>
+<li>Présentation des différentes pages, avec la navigation entre elles, et interactions avec tous les éléments interactifs.</li>
+<li>Parcours des fichiers de code avec le mentor. Mise en avant des différents composants React.</li>
+</ul>
+</li>
+<li>Discussion (10 min)
+<ul>
+<li>Le mentor, qui joue le rôle du CTO, posera des questions sur la méthodologie adoptée et sur les livrables.
+Le mentor challengera au maximum les décisions techniques que vous avez prises, il faudra donc que vous soyez capable de les justifier, et de défendre votre travail. À la fin de la soutenance, le mentor arrêtera de jouer le rôle du CTO pour vous permettre de débriefer ensemble.</li>
+</ul>
+</li>
+</ul>
+<h1>Compétences évaluées</h1>
+<ul>
+<li>Développer les routes d'une application web avec React Router</li>
+<li>Initialiser une application web avec un framework</li>
+<li>Créer des composants avec React</li>
+</ul>
+<h1><a href="https://giuliano-loic-11-07022022.vercel.app/">Site final</a></h1></article>
+    </section>
+
+
+
+
+
+
+</div>
+
+<nav>
+    <h2><a href="index.html">Home</a></h2><h3>Global</h3><ul><li><a href="global.html#Card">Card</a></li><li><a href="global.html#Collapse">Collapse</a></li><li><a href="global.html#Gallery">Gallery</a></li><li><a href="global.html#getAllHousing">getAllHousing</a></li><li><a href="global.html#getHousing">getHousing</a></li><li><a href="global.html#Host">Host</a></li><li><a href="global.html#Stars">Stars</a></li></ul>
+</nav>
+
+<br class="clear">
+
+<footer>
+    Documentation generated by <a href="https://github.com/jsdoc/jsdoc">JSDoc 3.6.10</a> on Sun Feb 20 2022 21:30:49 GMT+0100 (heure normale d’Europe centrale)
+</footer>
+
+<script> prettyPrint(); </script>
+<script src="scripts/linenumber.js"> </script>
+</body>
+</html>
